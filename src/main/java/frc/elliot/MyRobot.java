@@ -266,7 +266,7 @@ public class MyRobot
 
         //System.out.println("Drive Speed (front left): " + frontLeftTurnSpeed);
 
-        if (Math.abs(frontLeftDifference) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
+        if (Math.abs(frontLeftTurnPath) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
         {
             frontLeftTurn.set(frontLeftTurnSpeed);
         }
@@ -274,7 +274,7 @@ public class MyRobot
         {
             frontLeftTurn.set(0.0);
         }
-        if (Math.abs(frontRightDifference) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
+        if (Math.abs(frontRightTurnPath) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
         {
             frontRightTurn.set(frontRightTurnSpeed);
         }
@@ -282,7 +282,7 @@ public class MyRobot
         {
             frontRightTurn.set(0.0);
         }
-        if (Math.abs(backLeftDifference) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
+        if (Math.abs(backLeftTurnPath) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
         {
             backLeftTurn.set(backLeftTurnSpeed);
         }
@@ -290,7 +290,7 @@ public class MyRobot
         {
             backLeftTurn.set(0.0);
         }
-        if (Math.abs(backRightDifference) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
+        if (Math.abs(backRightTurnPath) > encoderZeroThreshold && desiredDriveSpeed >= snapBackRadius)
         {
             backRightTurn.set(backRightTurnSpeed);
         }
